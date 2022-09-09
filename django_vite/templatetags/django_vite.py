@@ -18,6 +18,7 @@ class DjangoViteManifest(NamedTuple):
     file: str
     src: str
     isEntry: Optional[bool] = False
+    dynamicImports: Optional[List[str]] = []
     css: Optional[List[str]] = []
     imports: Optional[List[str]] = []
 
