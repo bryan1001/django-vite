@@ -22,6 +22,7 @@ class DjangoViteManifest(NamedTuple):
     css: Optional[List[str]] = []
     imports: Optional[List[str]] = []
     assets: Optional[List[str]] = []
+    isDynamicEntry: Optional[bool] = False
 
 
 class DjangoViteConfig(NamedTuple):
