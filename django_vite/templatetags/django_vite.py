@@ -194,7 +194,7 @@ class DjangoViteAssetLoader:
         for import_path in manifest_entry.imports:
             tags.extend(
                 self._generate_css_files_of_asset(
-                    import_path, already_processed
+                    import_path, config_key, already_processed
                 )
             )
 
