@@ -503,8 +503,8 @@ class DjangoViteAssetLoader:
             str -- The script tag or an empty string.
         """
 
-        config = cls._get_config(config_key)
-        static_url = cls._get_static_url(config_key)
+        config = cls.instance()._get_config(config_key)
+        static_url = cls.instance()._get_static_url(config_key)
 
         if not config.dev_mode:
             return ""
