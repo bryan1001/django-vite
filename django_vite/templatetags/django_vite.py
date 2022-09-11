@@ -232,7 +232,7 @@ class DjangoViteAssetLoader:
 
         if config.dev_mode:
             return DjangoViteAssetLoader._generate_vite_server_url(
-                path, config
+                path, static_url, config
             )
 
         manifest = self._get_manifest(config_key)
